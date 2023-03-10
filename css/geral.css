@@ -4,3 +4,48 @@
 body {
   font-family: "Roboto Slab", serif;
 }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #222222;
+}
+
+.header-container {
+  display: flex;
+
+  align-items: center;
+}
+
+.header-brand {
+  flex: 1;
+}
+
+.header-menu ul {
+  display: flex;
+  align-items: center;
+
+  gap: 1px;
+}
+
+.header a {
+  display: block;
+  padding: 12px;
+
+  color: white;
+
+  text-decoration: none;
+
+  background-color: #222;
+}
+
+.header-menu ul li.active a {
+  background-color: #555;
+}
+
+.header-brand a {
+  width: min-content;
+}
