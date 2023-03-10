@@ -1,0 +1,19 @@
+.block {
+  padding: 2rem 0;
+}
+
+.block h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.block ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.block ul li span:first-child {
+  font-weight: bold;
+  margin-right: 4px;
+}
