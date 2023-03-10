@@ -1,0 +1,23 @@
+.ourMenuPage, .majorPhrase{
+  display: flex;
+  justify-content: center;
+}
+
+.ourMenuPage {
+  font-size: 1.8rem;
+}
+
+.majorPhrase {
+  font-size: 0.9rem;
+}
+
+.mainContent {
+  
+}
+
+.hamburguerCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
