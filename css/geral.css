@@ -1,51 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("./geral-header.css");
+@import url("./geral-intro.css");
 
 body {
   font-family: "Roboto Slab", serif;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
 .container {
   max-width: 960px;
   margin: 0 auto;
-}
-
-.header {
-  background-color: #222222;
-}
-
-.header-container {
-  display: flex;
-
-  align-items: center;
-}
-
-.header-brand {
-  flex: 1;
-}
-
-.header-menu ul {
-  display: flex;
-  align-items: center;
-
-  gap: 1px;
-}
-
-.header a {
-  display: block;
-  padding: 12px;
-
-  color: white;
-
-  text-decoration: none;
-
-  background-color: #222;
-}
-
-.header-menu ul li.active a {
-  background-color: #555;
-}
-
-.header-brand a {
-  width: min-content;
 }
