@@ -1,0 +1,59 @@
+.promocoes {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  gap: 1rem;
+}
+
+.promocao {
+  border: 1px solid black;
+}
+
+.promocao h2 {
+  font-size: 1.5rem;
+
+  margin-bottom: 0.5rem;
+}
+
+.promocao-title {
+  display: block;
+  text-align: center;
+
+  padding: 1rem 0.5rem;
+
+  background-color: #333333;
+
+  color: white;
+}
+
+.promocao-items {
+  list-style: none;
+
+  margin: 0.5rem 0;
+  padding: 0;
+
+  border-bottom: 2px solid #888888;
+}
+
+.promocao-items li {
+  padding: 1rem 1rem;
+
+  border-top: 2px solid #888888;
+}
+
+.promocao-items li:nth-child(odd) {
+  background-color: #33333321;
+}
+
+.promocao .price {
+  display: block;
+
+  padding: 1rem;
+  text-align: center;
+
+  font-size: 1.5rem;
+
+  color: gold;
+  background-color: #444444;
+}
