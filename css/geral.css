@@ -18,3 +18,14 @@ img {
   max-width: 960px;
   margin: 0 auto;
 }
+
+.block-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.block-list li span:first-child {
+  font-weight: bold;
+  margin-right: 4px;
+}
