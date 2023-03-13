@@ -11,13 +11,22 @@
   font-size: 0.9rem;
 }
 
-.mainContent {
+.menuItems {
   
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  flex-wrap: wrap;
+
 }
 
-.hamburguerCard {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+.productImage {
+  width: 350px;
+  padding: 0px;
 }
 
+
+.productName {
+  font-size: 1.2rem;
+  margin-top: 0px;
+}
