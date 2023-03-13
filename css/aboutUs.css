@@ -1,6 +1,6 @@
 body{
 
-    background-color: #555;
+    background-color: white;
 }
 
 
@@ -19,6 +19,7 @@ body{
     font-size: 30px;
     padding-top: 20px;
     padding-bottom: 30px;
+    color: rgb(0, 0, 0);
 
 }
 
@@ -32,7 +33,7 @@ body{
     padding-top: 35px;
     padding-right: 10%;
     padding-left: 0%;
-    font-size: 20px;
+    font-size: 15px;
     letter-spacing: 3px;
     line-height: 35px;
     color: rgb(37, 38, 39);
@@ -42,28 +43,79 @@ body{
 
 .cliente {
 
-    color: black;
+    color: rgb(252, 17, 17);
 
 }
 
 .imagemtexto{
 
-    border-radius: 10px;
-    box-shadow: 2px 3px 10px white;
-    border-color: white;
+    box-shadow: 2px 3px 10px black;
+    border-color: black;
     display:grid;
     grid-template-columns: 400px 1fr;
-    border-width: auto;
+    max-width: 1500px;
+    margin: 0 auto;
     padding: 1rem;
     gap: 1rem;
-  
+    margin-bottom: 35px;  
 }
 
 .container-publi{
 
     padding-top: 70px;
     text-align: center;
+    font-size: 15px;
+    color: black;
+    
+
+
+}
+
+.bobesponja{
+
+    box-shadow: 2px 3px 10px black;
+    border-color: black;
+    display:grid;
+    grid-template-columns: 1fr 400px;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 1rem;
+    gap: 1rem;
+    margin-bottom: 35px
+  
+}
+
+.{
+
+    padding-top: 70px;
+    text-align: center;
     font-size: 30px;
+    color: black;
+    
+
+
+}
+
+.siriguejo{
+
+    box-shadow: 2px 3px 10px black;
+    border-color: black;
+    display:grid;
+    grid-template-columns: 1fr 400px;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 1rem;
+    gap: 1rem;
+  
+}
+
+.text-info{
+
+    padding-top: 70px;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    
 
 
 }
