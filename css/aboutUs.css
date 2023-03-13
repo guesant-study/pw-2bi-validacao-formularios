@@ -1,10 +1,16 @@
+body{
+
+    background-color: #555;
+}
+
 
 
 .titulo {
-
+    padding-top: 30px;
     text-align: center;
-    color: #a4626c;
-    font-size: 20px;
+    color: white;
+    font-size: 40px;
+
 }
 
 .subtitulo {
@@ -12,43 +18,52 @@
     text-align: center;
     font-size: 30px;
     padding-top: 20px;
-    padding-bottom: 10px;
-}
-
-.historia {
-    padding: 35px;
-    text-align: center;
-    font-size: 30px;
+    padding-bottom: 30px;
 
 }
 
-.container {
+.container-publi {
 
-    float: right;
-    height: auto;
-    width: 550px;
-    max-width: 100%;
-    margin: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border: 2px solid rgb(61, 59, 59);
-
+    color: white;
 
 }
 
-.text{
-        padding-top: 35px;
-        padding-right: 10%;
-        padding-left: 0%;
-        font-size: 20px;
-        letter-spacing: 3px;
-        line-height: 35px;
-        color:dodgerblue;
-        text-align: justify;
+.text {
+    padding-top: 35px;
+    padding-right: 10%;
+    padding-left: 0%;
+    font-size: 20px;
+    letter-spacing: 3px;
+    line-height: 35px;
+    color: rgb(37, 38, 39);
+    text-align: justify;
 
 }
+
 .cliente {
 
     color: black;
+
+}
+
+.imagemtexto{
+
+    border-radius: 10px;
+    box-shadow: 2px 3px 10px white;
+    border-color: white;
+    display:grid;
+    grid-template-columns: 400px 1fr;
+    border-width: auto;
+    padding: 1rem;
+    gap: 1rem;
+  
+}
+
+.container-publi{
+
+    padding-top: 70px;
+    text-align: center;
+    font-size: 30px;
+
 
 }
