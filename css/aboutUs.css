@@ -20,6 +20,7 @@ body{
     padding-top: 20px;
     padding-bottom: 30px;
     color: rgb(0, 0, 0);
+    justify-content: center;
 
 }
 
@@ -27,17 +28,22 @@ body{
 
     color: white;
 
+    text-align: center;
+    justify-content: center;
+    font-size: 100px;
+
 }
 
 .text {
+
     padding-top: 35px;
     padding-right: 10%;
     padding-left: 0%;
-    font-size: 15px;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     line-height: 35px;
     color: rgb(37, 38, 39);
-    text-align: justify;
+    text-align: center;
+    max-width: 800px;
 
 }
 
@@ -47,7 +53,43 @@ body{
 
 }
 
+.lula {
+
+    color: #6A5ACD;
+
+}
+.bob {
+
+    color: 	#FFBF00; 
+
+}
+
 .imagemtexto{
+
+    box-shadow: 2px 3px 10px black;
+    border-color: black;
+    display:grid;
+    grid-template-columns: 400px 1fr;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 1rem;
+    gap: 1rem;
+    margin-bottom: 35px;  
+}
+
+.imagemtexto2{
+
+    box-shadow: 2px 3px 10px black;
+    border-color: black;
+    display:grid;
+    grid-template-columns: 400px 1fr    ;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 1rem;
+    gap: 1rem;
+    margin-bottom: 35px;  
+}
+.imagemtexto3{
 
     box-shadow: 2px 3px 10px black;
     border-color: black;
@@ -81,41 +123,10 @@ body{
     margin: 0 auto;
     padding: 1rem;
     gap: 1rem;
-    margin-bottom: 35px
+    margin-bottom: 35px;
   
 }
-
-.{
-
-    padding-top: 70px;
-    text-align: center;
-    font-size: 30px;
-    color: black;
+.listinha{
+    justify-content: end;
     
-
-
-}
-
-.siriguejo{
-
-    box-shadow: 2px 3px 10px black;
-    border-color: black;
-    display:grid;
-    grid-template-columns: 1fr 400px;
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 1rem;
-    gap: 1rem;
-  
-}
-
-.text-info{
-
-    padding-top: 70px;
-    text-align: center;
-    font-size: 15px;
-    color: black;
-    
-
-
 }
