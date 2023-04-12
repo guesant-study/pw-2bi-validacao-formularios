@@ -1,0 +1,37 @@
+.header {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header-container {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem;
+}
+
+.header-brand img {
+  height: 4.5rem;
+}
+
+.header-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.5rem;
+}
+
+.header-links a {
+  border-radius: 0.5rem;
+
+  padding: 0.5rem 1.25rem;
+
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.header-links a.ativo {
+  background-color: #f8b602;
+  color: white;
+}

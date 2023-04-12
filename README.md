@@ -1,13 +1,26 @@
-# Hamburgueria 
+# Hamburgueria
 
 ## Páginas obrigatórias
 
-- Home
-- Quem Somos
-- Cardápio
-- Promoção do dia
-- Contato
-- Localização
+- Páginas
+
+  - Home
+
+    - Cardápio
+
+    - Promoção do dia
+
+  - Sobre
+
+    - Quem Somos
+
+- Geral
+
+  - Footer
+
+    - Contato
+
+    - Localização
 
 ## Integrantes
 
