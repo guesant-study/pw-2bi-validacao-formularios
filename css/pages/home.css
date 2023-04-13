@@ -1,0 +1,13 @@
+.secao {
+  background-color: #eee;
+
+  padding: 2rem 0;
+}
+
+.secao h1 {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: bold;
+
+  margin-bottom: 1rem;
+}

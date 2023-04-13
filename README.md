@@ -6,9 +6,9 @@
 
   - Home
 
-    - Cardápio
-
     - Promoção do dia
+
+    - Cardápio
 
   - Sobre
 
