@@ -4,13 +4,13 @@
 
 - Páginas
 
-  - Home
+  - [Home](./index.html)
 
-    - Promoção do dia
+    - [Promoção do dia](./index.html#promocao-do-dia)
 
-    - Nossos Itens (Cardápio)
+    - [Nossos Itens (Cardápio)](./index.html#cardapio)
 
-  - Sobre
+  - [Sobre](./sobre.html)
 
     - Quem Somos
 
