@@ -1,13 +1,58 @@
-.secao {
-  background-color: #eee;
+.home {
+  background-color: white;
+}
 
+.home-intro img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 639px) {
+  .home-intro img {
+    height: 15rem;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .home-intro img {
+    height: 20rem;
+  }
+}
+
+.secao {
   padding: 2rem 0;
 }
 
 .secao h1 {
-  margin: 0;
+  /* margin: 0;
   font-size: 1.75rem;
   font-weight: bold;
 
-  margin-bottom: 1rem;
+  margin-bottom: 1rem; */
+
+  margin-bottom: 25px;
+
+  font-family: "Tilt Warp", cursive;
+
+  text-align: center;
+
+  font-size: 1.9rem;
+}
+
+.linha-horizontal {
+  margin: 30px 0;
+
+  display: flex;
+  text-align: center;
+
+  /* width: 90%; */
+  border: 1px solid #000;
+}
+
+section:nth-child(2n + 0) {
+  background-color: #eee;
+}
+
+section:nth-child(2n + 1) {
+  background-color: white;
 }

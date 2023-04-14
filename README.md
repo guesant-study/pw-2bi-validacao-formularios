@@ -8,7 +8,7 @@
 
     - Promoção do dia
 
-    - Cardápio
+    - Nossos Itens (Cardápio)
 
   - Sobre
 

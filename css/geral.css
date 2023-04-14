@@ -1,7 +1,9 @@
 @import url("partials/_reset.css");
 @import url("partials/_grid.css");
+@import url("partials/_divider.css");
 @import url("partials/_header.css");
 @import url("partials/_products.css");
+@import url("partials/_menu.css");
 
 body {
   font-family: Arial, Helvetica, sans-serif;
