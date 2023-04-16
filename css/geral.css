@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DynaPuff&display=swap");
 
-@import url("partials/_reset.css");
-@import url("partials/_grid.css");
-@import url("partials/_divider.css");
-@import url("partials/_header.css");
-@import url("partials/_products.css");
-@import url("partials/_menu.css");
+@import url("parts/_reset.css");
+@import url("parts/_grid.css");
+@import url("parts/_divider.css");
+@import url("parts/_header.css");
+@import url("parts/_products.css");
+@import url("parts/_menu.css");
 
 body,
 input,
