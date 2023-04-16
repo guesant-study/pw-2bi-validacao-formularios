@@ -55,6 +55,8 @@
   grid-gap: 10px;
   margin: 30px 0px;
   background-color: rgb(151, 11, 11);
+  border-radius: 1.5rem;
+  overflow: hidden;
 }
 
 .mainText {
@@ -82,8 +84,7 @@
   -webkit-box-shadow: 13px 22px 90px -38px rgba(255, 0, 0, 1);
   -moz-box-shadow: 13px 22px 90px -38px rgba(255, 0, 0, 1);
   box-shadow: 13px 22px 90px -38px rgba(255, 0, 0, 1);
-  border-radius: 1.5rem;
-overflow: hidden;
+
 }
 
 .principalText {
