@@ -84,3 +84,31 @@
   gap: 30px;
   margin: 30px 30px;
 }
+
+@media screen and (max-width: 768px) {
+  .mainCc-Grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    margin: 30px 0px;
+    background-color: red;
+  }
+
+  .ourTeam {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin: 30px 30px;
+  } 
+
+  .mainText {
+    font-size:1rem;
+    margin: 30px 0px 30px 0px;
+  }
+
+  .principalText {
+    font-size: 1rem;
+    margin: 30px 10px 30px 10px;
+  }
+}
