@@ -10,14 +10,20 @@
 
 .firstParagraph,
 .secondParagraph {
-  font-size: 1.5rem;
-  font-weight: 400;
-  margin-bottom: 20px;
-  text-align: center;
+  margin: 20px 0;
 }
 
 .firstParagraph {
+  font-size: 1.5rem;
+  text-align: center;
   font-weight: 600;
+}
+
+.secondParagraph {
+  text-align: left;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.25rem;
 }
 
 .mainTitle,
@@ -96,7 +102,6 @@
 }
 
 .horizontalLine {
-
 }
 
 .TitleTeam {
