@@ -1,4 +1,5 @@
-.footer {
+footer {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   position: relative;
   width: 100%;
   background: rgb(111, 8, 8);
@@ -10,25 +11,31 @@
   flex-direction: column;
 }
 
+.footer-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .list{
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px 0;
+  margin: 10px 0px;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 
 
 .list_link {
   font-size: 1.2rem;
-  color: #fff;
-  margin: 0 10px;
+  color: #ffff;
+  margin: 0 10px 10px;
   display: inline-block;
   text-decoration: none;
   opacity: 0.75;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .list_link:hover {
@@ -36,7 +43,22 @@
 }
 
 .autoral{
-
+  margin-top: 15px;
+   display: flex;
+   text-align: center;
+    justify-content: center;
     color:white;
+}
 
+.informations-class {
+  margin-top:15px;
+  color: white;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-list {
+    grid-template-columns: 1fr;
+  }
 }
