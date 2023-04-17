@@ -193,22 +193,3 @@
     height: 80%;
   }
 }
-  
-.clientsFeedback .moradorFenda img {
-  width: 300px;
-  
-}
-
-.clientsFeedback {
-  display: flex;
-  justify-content: center;
-}
-
-.client-text {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  align-items: center;
-}
-
-.five.stars {
-}
