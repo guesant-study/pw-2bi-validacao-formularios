@@ -12,7 +12,7 @@
 
   - [Sobre](./sobre.html)
 
-    - Quem Somos
+    - [Quem Somos](./sobre.html)
 
 - Geral
 
@@ -31,3 +31,16 @@
 ## Professores
 
 - Prof. Alberto (vulgo betinho).
+
+## Formulários
+
+- Cadastro de Produto/Hamburguer - vitor
+- Cadastro de Usuário
+- Cadastro de Fornecedor - vitor
+- Cadastro de Funcionário - lucena
+- Cadastro de Cliente - lucena
+- Cadastro de Cardápio
+- Cadastrar Combo
+- Cadastrar Pedido - antunes
+- Cadastrar Promoção - antunes
+- Cadastrar Contato
