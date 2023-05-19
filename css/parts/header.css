@@ -1,11 +1,11 @@
-.header {
+.app-header {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 
   z-index: 1000;
   position: relative;
 }
 
-.header-container {
+.app-header-container {
   display: flex;
 
   align-items: center;
@@ -14,11 +14,11 @@
   padding: 1rem;
 }
 
-.header-brand img {
+.app-header-brand img {
   height: 4.5rem;
 }
 
-.header-links {
+.app-header-links {
   display: flex;
 
   align-items: center;
@@ -26,7 +26,7 @@
   gap: 0.5rem;
 }
 
-.header-links a {
+.app-header-links a {
   border-radius: 0.5rem;
 
   padding: 0.5rem 1.25rem;
@@ -34,7 +34,7 @@
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-.header-links a.ativo {
+.app-header-links a.app-ativo {
   background-color: red;
   color: white;
 }

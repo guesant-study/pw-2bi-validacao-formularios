@@ -1,4 +1,4 @@
-.menu-title {
+.app-menu-title {
   display: flex;
   margin: 25px 0px 25px 0px;
   font-family: "Tilt Warp", cursive;
@@ -6,7 +6,7 @@
   font-size: 1.9rem;
 }
 
-.menu-items {
+.app-menu-items {
   display: grid;
 
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -19,7 +19,7 @@
   text-align: center;
 }
 
-.menu-item {
+.app-menu-item {
   cursor: pointer;
 
   padding: 0.5rem;
@@ -30,7 +30,7 @@
   border-radius: 0.5rem;
 }
 
-.menu-item-image {
+.app-menu-item-image {
   width: 110px;
   padding: 0px;
   margin: 0 auto;
@@ -40,16 +40,16 @@
   align-items: center;
 }
 
-.menu-item-name {
+.app-menu-item-name {
   font-size: 1.2rem;
   margin-top: 0px;
 }
 
-.menu-item-price {
+.app-menu-item-price {
   margin-top: 10px;
 }
 
-.menu-item:hover {
+.app-menu-item:hover {
   border-color: #9e9e9e;
   transform: translateY(-10px);
 }

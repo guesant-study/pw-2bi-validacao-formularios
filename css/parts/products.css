@@ -1,4 +1,4 @@
-.products {
+.app-products {
   display: grid;
 
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -7,18 +7,18 @@
 }
 
 @media screen and (max-width: 639px) {
-  .products {
+  .app-products {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
 }
 
 @media screen and (mikn-width: 640px) {
-  .products {
+  .app-products {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 }
 
-.product {
+.app-product {
   display: block;
   background-color: white;
 
@@ -31,14 +31,14 @@
   text-align: center;
 }
 
-.product-name {
+.app-product-name {
   font-weight: bold;
   font-size: 1.25rem;
 
   margin: 1rem;
 }
 
-.product-prices {
+.app-product-prices {
   padding: 1rem 0;
 
   display: flex;
@@ -46,12 +46,12 @@
   gap: 1rem;
 }
 
-.product-price-old {
+.app-product-price-old {
   font-size: 1.125rem;
   text-decoration: line-through;
 }
 
-.product-price-new {
+.app-product-price-new {
   font-size: 1.25rem;
 
   font-weight: bold;
