@@ -44,3 +44,18 @@
 - Cadastrar Pedido - antunes
 - Cadastrar Promoção - antunes
 - Cadastrar Contato
+
+## Desenvolvimento
+
+Para adicionar os estilos do boostrap na página HTML:
+
+```html
+<!-- Coloque dentro do <head></head> -->
+<!-- DEVE ESTAR ANTES DOS ESTILOS DO PROJETO -->
+<link rel="stylesheet" href="/css/bootstrap.min.css" />
+```
+
+```html
+<!-- Coloque antes de fechar o </body> -->
+<script src="/js/bootstrap.min.js"></script>
+```
