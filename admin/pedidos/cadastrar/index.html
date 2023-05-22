@@ -16,7 +16,10 @@
       <div class="app-container app-header-container">
         <div>
           <a class="app-header-brand" href="/index.html">
-            <img src="/imgs/logo.webp" alt="Logo da Hamburgueria Siri Cascudo" />
+            <img
+              src="/imgs/logo.webp"
+              alt="Logo da Hamburgueria Siri Cascudo"
+            />
           </a>
         </div>
       </div>
@@ -24,49 +27,101 @@
 
     <main>
       <div class="app-container py-4">
-        <h1>Cadastrar Pedido</h1>
+        <h1 class="text-center">Cadastrar Pedido</h1>
 
         <form>
           <div class="mb-3">
-            <label for="field-funcionario" class="form-label">Funcionário</label>
-            <input type="text" class="form-control" id="field-funcionario">
+            <label for="field-funcionario-drop" class="form-label">
+              Funcionário
+            </label>
+
+            <div class="dropdown">
+              <input
+                type="text"
+                aria-expanded="false"
+                data-bs-toggle="dropdown"
+                id="field-funcionario-drop"
+                data-bs-auto-close="outside"
+                class="form-control dropdown-toggle"
+              />
+
+              <ul class="dropdown-menu" style="width: 100%">
+                <li>
+                  <a class="dropdown-item" href="#">Action</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div class="mb-3">
-            <label for="field-cliente" class="form-label">Cliente</label>
-            <input type="text" class="form-control" id="field-cliente">
+            <label for="field-cliente-drop" class="form-label">Cliente</label>
+
+            <div class="dropdown">
+              <input
+                type="text"
+                aria-expanded="false"
+                data-bs-toggle="dropdown"
+                id="field-cliente-drop"
+                data-bs-auto-close="outside"
+                class="form-control dropdown-toggle"
+              />
+
+              <ul class="dropdown-menu" style="width: 100%">
+                <li>
+                  <a class="dropdown-item" href="#">Action</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
           </div>
 
+          <div>
+            <label class="form-label">Itens</label>
 
-          <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Produto</th>
-                <th scope="col">UND</th>
-                <th scope="col">R$ / UND</th>
-                <th scope="col">Quantidade</th>
-                <th scope="col">R$ Total</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>H</td>
-                <td>UND</td>
-                <td>R$ 10,23</td>
-                <td>1</td>
-                <td>R$ 10,23</td>
-              </tr>
-            </tbody>
-          </table>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Produto</th>
+                  <th scope="col">UND</th>
+                  <th scope="col">R$ / UND</th>
+                  <th scope="col">Quantidade</th>
+                  <th scope="col">R$ Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>H</td>
+                  <td>UND</td>
+                  <td>R$ 10,23</td>
+                  <td>1</td>
+                  <td>R$ 10,23</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-danger full-width">
+              Registrar Pedido
+            </button>
+          </div>
         </form>
       </div>
     </main>
 
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
