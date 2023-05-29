@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/css/geral.css" />
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
 
+    <link rel="stylesheet" href="/css/parts/formulario.css" />
     <link rel="stylesheet" href="/css/pages/admin-pedidos-cadastrar.css" />
   </head>
   <body>
@@ -34,7 +35,7 @@
         <form id="form-principal"></form>
 
         <div>
-          <div class="mb-3">
+          <div class="mb-3 campo-gp">
             <label for="field-data-inicio" class="form-label">
               Data de Início
             </label>
@@ -46,22 +47,28 @@
               type="datetime-local"
               id="field-data-inicio"
               form="form-principal"
+              name="inputCadastrarPromocaoDataInicio"
             />
+
+            <span class="mensagem-erro" data-erro=""></span>
           </div>
 
-          <div class="mb-3">
-            <label for="field-data-fim" class="form-label">
+          <div class="mb-3 campo-gp">
+            <label for="field-data-termino" class="form-label">
               Data de Término
             </label>
 
             <input
               required
               minlength="3"
-              id="field-data-fim"
+              id="field-data-termino"
               class="form-control"
               type="datetime-local"
               form="form-principal"
+              name="inputCadastrarPromocaoDataInicio"
             />
+
+            <span class="mensagem-erro" data-erro=""></span>
           </div>
 
           <div class="d-grid gap-2">
@@ -78,5 +85,77 @@
     </main>
 
     <script src="/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      const inputDataTermino = document.querySelector("#field-data-termino");
+      const inputDataInicio = document.querySelector("#field-data-inicio");
+
+      const getDataTermino = () => {
+        const dataTermino =
+          inputDataTermino.value && new Date(inputDataTermino.value);
+
+        return dataTermino ?? null;
+      };
+
+      const getDataInicio = () => {
+        const dataInicio =
+          inputDataInicio.value && new Date(inputDataInicio.value);
+
+        return dataInicio ?? null;
+      };
+
+      const getMsgErro = (input) => {
+        const gp = input.closest(".campo-gp");
+        const msgErro = gp.querySelector(".mensagem-erro");
+
+        return msgErro;
+      };
+
+      const validateDataTermino = () => {
+        const msgErro = getMsgErro(inputDataTermino);
+
+        const dataInicio = getDataInicio();
+        const dataTermino = getDataTermino();
+
+        msgErro.textContent = "";
+
+        if (!dataTermino) {
+          msgErro.textContent = "A data de término é inválida.";
+        }
+
+        if (dataTermino < dataInicio) {
+          msgErro.textContent =
+            "A data de término deve ser maior que a data de início.";
+        }
+      };
+
+      const resetDataTermino = () => {
+        const msgErro = getMsgErro(inputDataTermino);
+        msgErro.textContent = "";
+      };
+
+      const validateDataInicio = () => {
+        const msgErro = getMsgErro(inputDataInicio);
+
+        const dataInicio = getDataInicio();
+
+        msgErro.textContent = "";
+
+        if (!dataInicio) {
+          msgErro.textContent = "A data de início é inválida.";
+        }
+      };
+
+      const resetDataInicio = () => {
+        const msgErro = getMsgErro(inputDataInicio);
+        msgErro.textContent = "";
+      };
+
+      inputDataInicio.addEventListener("change", () => resetDataInicio());
+      inputDataInicio.addEventListener("blur", () => validateDataInicio());
+
+      inputDataTermino.addEventListener("change", () => resetDataTermino());
+      inputDataTermino.addEventListener("blur", () => validateDataTermino());
+    </script>
   </body>
 </html>
