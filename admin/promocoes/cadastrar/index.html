@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="/imgs/favicon.png" type="image/png" />
+    <title>Cadastrar Promoção - Painel - Hamburgueria Siri Cascudo</title>
+
+    <link rel="stylesheet" href="/css/geral.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="/css/pages/admin-pedidos-cadastrar.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="app-container app-header-container">
+        <div>
+          <a class="app-header-brand" href="/index.html">
+            <img
+              src="/imgs/logo.webp"
+              alt="Logo da Hamburgueria Siri Cascudo"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="app-container py-4">
+        <h1 class="text-center">Cadastrar Promoção</h1>
+
+        <form id="form-principal"></form>
+
+        <div>
+          <div class="mb-3">
+            <label for="field-data-inicio" class="form-label">
+              Data de Início
+            </label>
+
+            <input
+              required
+              minlength="3"
+              class="form-control"
+              type="datetime-local"
+              id="field-data-inicio"
+              form="form-principal"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="field-data-fim" class="form-label">
+              Data de Término
+            </label>
+
+            <input
+              required
+              minlength="3"
+              id="field-data-fim"
+              class="form-control"
+              type="datetime-local"
+              form="form-principal"
+            />
+          </div>
+
+          <div class="d-grid gap-2">
+            <button
+              type="submit"
+              form="form-principal"
+              class="btn btn-primary full-width"
+            >
+              Registrar Promoção
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
