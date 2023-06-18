@@ -8,6 +8,7 @@
 @import url("parts/products.css");
 @import url("parts/menu.css");
 @import url("parts/footer.css");
+@import url("pages/cadastro.css");
 
 body,
 input,
