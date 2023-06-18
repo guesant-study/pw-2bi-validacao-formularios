@@ -1,0 +1,10 @@
+.principalText {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
