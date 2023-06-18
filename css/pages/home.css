@@ -1,8 +1,8 @@
-.home {
+.app-home {
   background-color: white;
 }
 
-.home-intro {
+.app-home-intro {
   display: grid;
 
   grid-template-columns: 1fr;
@@ -11,7 +11,7 @@
   width: 100%;
 }
 
-.home-intro img {
+.app-home-intro img {
   width: 100%;
   object-fit: cover;
 
@@ -19,7 +19,7 @@
   grid-column: 1/2;
 }
 
-.home-intro-text {
+.app-home-intro-text {
   grid-row: 1/2;
   grid-column: 1/2;
 
@@ -34,7 +34,7 @@
   backdrop-filter: blur(4px);
 }
 
-.home-intro-text .home-intro-title {
+.app-home-intro-text .app-home-intro-title {
   font-weight: bold;
   color: white;
 
@@ -43,31 +43,31 @@
   margin-bottom: 0.75rem;
 }
 
-.home-intro-text p {
+.app-home-intro-text p {
   font-size: 1.25rem;
 
   line-height: 1.3;
 }
 
 @media screen and (max-width: 639px) {
-  .home-intro img {
+  .app-home-intro img {
     height: 15rem;
   }
 }
 
 @media screen and (min-width: 640px) {
-  .home-intro img {
+  .app-home-intro img {
     height: 20rem;
   }
 }
 
-.secao {
+.app-secao {
   padding: 2rem 0;
 
   border-top: 1px solid #00000047;
 }
 
-.secao h1 {
+.app-secao h1 {
   /* margin: 0;
   font-size: 1.75rem;
   font-weight: bold;
@@ -83,7 +83,7 @@
   font-size: 1.9rem;
 }
 
-.linha-horizontal {
+.app-linha-horizontal {
   margin: 30px 0;
 
   display: flex;

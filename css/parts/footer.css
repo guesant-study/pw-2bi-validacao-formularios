@@ -1,19 +1,19 @@
-.pfooter {
+.app-footer {
   color: white;
 }
 
-.pfooter .footer-infos-bg {
+.app-footer .app-footer-infos-bg {
   background: rgb(111, 8, 8);
 }
 
-.pfooter h2 {
+.app-footer h2 {
   font-size: 1.5rem;
   font-weight: bold;
 
   margin-bottom: 1rem;
 }
 
-.pfooter .footer-infos {
+.app-footer .app-footer-infos {
   padding: 2rem 1rem;
 
   display: flex;
@@ -23,37 +23,37 @@
   gap: 2rem;
 }
 
-.localizacao {
+.app-localizacao {
   flex: 1 1;
 }
 
-.localizacao-descricao p {
+.app-localizacao-descricao p {
   line-height: 1.3;
   margin: 1rem 0;
 }
 
-.localizacao img {
+.app-localizacao img {
   border: 10px solid rgb(211, 173, 38);
   border-radius: 1rem;
 }
 
-.contato .contato-lista {
+.app-contato .app-contato-lista {
   display: flex;
   flex-direction: column;
 
   padding: 1rem 0;
 }
 
-.contato .contato-lista li {
+.app-contato .app-contato-lista li {
   padding: 1rem 1rem;
   border-top: 1px solid rgba(255, 255, 255, 0.575);
 }
 
-.contato .contato-lista li:last-child {
+.app-contato .app-contato-lista li:last-child {
   border-bottom: 1px solid rgba(255, 255, 255, 0.575);
 }
 
-.pfooter .footer-copy {
+.app-footer .app-footer-copy {
   background: rgb(72, 3, 3);
   text-align: center;
   padding: 1rem;
