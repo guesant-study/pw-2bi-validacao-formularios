@@ -18,10 +18,7 @@
       <div class="app-container app-header-container">
         <div>
           <a class="app-header-brand" href="/index.html">
-            <img
-              src="/imgs/logo.webp"
-              alt="Logo da Hamburgueria Siri Cascudo"
-            />
+            <img src="/imgs/logo.webp" alt="Logo da Hamburgueria Siri Cascudo" />
           </a>
         </div>
       </div>
@@ -36,15 +33,13 @@
 
         <form>
           <div class="mb-3">
-            <label for="field-funcionario-drop" class="form-label">
-              Funcionário
-            </label>
+            <label for="field-funcionario-drop" class="form-label"> Funcionário </label>
 
             <div class="dropdown">
               <input
                 type="text"
                 required
-                minlength="3"
+                minlength="4"
                 aria-expanded="false"
                 data-bs-toggle="dropdown"
                 id="field-funcionario-drop"
@@ -55,9 +50,7 @@
 
               <ul class="dropdown-menu" style="width: 100%">
                 <li>
-                  <a class="dropdown-item active" href="#">
-                    Flávia Alana Moreira
-                  </a>
+                  <a class="dropdown-item active" href="#"> Flávia Alana Moreira </a>
                 </li>
 
                 <li>
@@ -67,9 +60,7 @@
                 <li><hr class="dropdown-divider" /></li>
 
                 <li>
-                  <a class="dropdown-item" href="#"
-                    >Cadastrar Funcionário "..."</a
-                  >
+                  <a class="dropdown-item" href="#"> Cadastrar Funcionário "..." </a>
                 </li>
               </ul>
             </div>
@@ -81,7 +72,7 @@
             <div class="dropdown">
               <input
                 type="text"
-                minlength="1"
+                minlength="4"
                 aria-expanded="false"
                 data-bs-toggle="dropdown"
                 id="field-cliente-drop"
@@ -92,9 +83,7 @@
 
               <ul class="dropdown-menu" style="width: 100%">
                 <li>
-                  <a class="dropdown-item active" href="#"
-                    >Nathan Ruan Davi Assunção</a
-                  >
+                  <a class="dropdown-item active" href="#">Nathan Ruan Davi Assunção</a>
                 </li>
 
                 <li>
@@ -113,99 +102,73 @@
           <hr />
 
           <div class="my-3 adicionar-produtos">
-            <form>
-              <h4 class="mb-3">Adicionar Produto</h4>
+            <h4 class="mb-3">Adicionar Produto</h4>
 
-              <div class="row align-items-end">
-                <div class="col">
-                  <label for="field-adicionar-produto" class="form-label">
-                    Produto
-                  </label>
+            <div class="row align-items-end">
+              <div class="col">
+                <label for="field-adicionar-produto" class="form-label"> Produto </label>
 
-                  <div class="dropdown">
-                    <input
-                      required
-                      minlength="1"
-                      type="text"
-                      aria-expanded="false"
-                      data-bs-toggle="dropdown"
-                      id="field-adicionar-produto"
-                      data-bs-auto-close="outside"
-                      class="form-control dropdown-toggle"
-                      form="form-adicionar-produto"
-                    />
-
-                    <ul class="dropdown-menu" style="width: 100%">
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          Hamburguer de Queijo
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item active" href="#">
-                          Hamburguer de Siri
-                        </a>
-                      </li>
-
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          Hamburguer com Fritas
-                        </a>
-                      </li>
-
-                      <li>
-                        <hr class="dropdown-divider" />
-                      </li>
-
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          Cadastrar Produto "..."
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="col-auto preco">
-                  <div class="input-group">
-                    <span class="input-group-text">R$</span>
-
-                    <input
-                      required
-                      min="0.01"
-                      type="text"
-                      class="form-control text-end"
-                      form="form-adicionar-produto"
-                    />
-                  </div>
-                </div>
-
-                <div class="col-auto quantidade">
-                  <label for="adicionar-produto-quantidade" class="form-label">
-                    Quantidade
-                  </label>
-
+                <div class="dropdown">
                   <input
-                    min="0"
                     required
-                    type="number"
-                    class="form-control text-end"
-                    id="adicionar-produto-quantidade"
+                    minlength="1"
+                    type="text"
+                    aria-expanded="false"
+                    data-bs-toggle="dropdown"
+                    id="field-adicionar-produto"
+                    data-bs-auto-close="outside"
+                    class="form-control dropdown-toggle"
                     form="form-adicionar-produto"
                   />
-                </div>
 
-                <div class="col-auto">
-                  <button
-                    type="submit"
-                    class="btn btn-primary mb-0"
-                    form="form-adicionar-produto"
-                  >
-                    Adicionar Produto
-                  </button>
+                  <ul class="dropdown-menu" style="width: 100%">
+                    <li>
+                      <a class="dropdown-item" href="#"> Hamburguer de Queijo </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item active" href="#"> Hamburguer de Siri </a>
+                    </li>
+
+                    <li>
+                      <a class="dropdown-item" href="#"> Hamburguer com Fritas </a>
+                    </li>
+
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+
+                    <li>
+                      <a class="dropdown-item" href="#"> Cadastrar Produto "..." </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
-            </form>
+
+              <div class="col-auto preco">
+                <div class="input-group">
+                  <span class="input-group-text">R$</span>
+
+                  <input required min="0.01" type="text" class="form-control text-end" form="form-adicionar-produto" />
+                </div>
+              </div>
+
+              <div class="col-auto quantidade">
+                <label for="adicionar-produto-quantidade" class="form-label"> Quantidade </label>
+
+                <input
+                  min="0"
+                  required
+                  type="number"
+                  class="form-control text-end"
+                  id="adicionar-produto-quantidade"
+                  form="form-adicionar-produto"
+                />
+              </div>
+
+              <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-0" form="form-adicionar-produto">Adicionar Produto</button>
+              </div>
+            </div>
           </div>
 
           <hr />
@@ -236,12 +199,7 @@
                     <td>R$ 10,23</td>
 
                     <td>
-                      <button
-                        type="button"
-                        class="btn btn-outline-danger btn-sm"
-                      >
-                        Remover
-                      </button>
+                      <button type="button" class="btn btn-outline-danger btn-sm">Remover</button>
                     </td>
                   </tr>
                 </tbody>
@@ -252,9 +210,7 @@
           <hr />
 
           <div class="mb-3">
-            <label for="field-desconto-drop" class="form-label">
-              Desconto
-            </label>
+            <label for="field-desconto-drop" class="form-label"> Desconto </label>
 
             <input
               min="0"
@@ -280,13 +236,7 @@
           </div>
 
           <div class="d-grid gap-2">
-            <button
-              type="submit"
-              class="btn btn-primary full-width"
-              form="form-principal"
-            >
-              Registrar Pedido
-            </button>
+            <button type="submit" class="btn btn-primary full-width" form="form-principal">Registrar Pedido</button>
           </div>
         </form>
       </div>
