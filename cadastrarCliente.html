@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -46,40 +46,10 @@
             required
           />
         </div>
-        <div class="mb-3">
-          <label for="diaNascimento">Data de Nascimento:</label>
-          <div class="row">
-            <div class="col">
-              <select
-                name="diaNascimento"
-                id="diaNascimento"
-                class="form-select"
-                required
-              >
-                <option value="">Dia</option>
-              </select>
-            </div>
-            <div class="col">
-              <select
-                name="mesNascimento"
-                id="MesNascimento"
-                class="form-select"
-                required
-              >
-                <option value="">Mês</option>
-              </select>
-            </div>
-            <div class="col">
-              <select
-                name="anoNascimento"
-                id="anoNascimento"
-                class="form-select"
-                required
-              >
-                <option value="">Ano</option>
-              </select>
-            </div>
-          </div>
+       <div class="mb-3">
+          <label for="dataNascimentoInput" class="form-label">Data de Nascimento</label>
+          <input type="text" class="form-control" id="dataNascimentoInput" placeholder="DD/MM/AAAA" name="dataNascimento" required />
+          <div class="invalid-feedback">Por favor, insira uma data de nascimento válida.</div>
         </div>
 
         <div class="mb-3">
@@ -91,6 +61,7 @@
               placeholder="Email"
               aria-label="email"
               aria-describedby="basic-addon2"
+              name="email"
               required
             />
             <span class="input-group-text" id="email">@exemplo.com</span>
@@ -171,7 +142,7 @@
 
         <div class="mb-3">
           <label for="genero">Gênero:</label>
-          <select name="genero" id="genero" class="form-select genero">
+          <select name="genero" id="genero" class="form-select genero" required>
             <option value="">Selecione seu Gênero</option>
             <option value="masculino">Masculino</option>
             <option value="feminino">Feminino</option>
@@ -193,7 +164,8 @@
         <input class="btn btn-primary" type="submit" value="Cadastrar" />
       </form>
     </div>
-
+    <script src="/js/valida-cliente.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+
   </body>
 </html>
