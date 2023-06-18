@@ -1,6 +1,6 @@
 # Hamburgueria
 
-## Páginas obrigatórias
+## Páginas Obrigatórias
 
 - Páginas
 
@@ -13,6 +13,16 @@
   - [Sobre](./sobre.html)
 
     - [Quem Somos](./sobre.html)
+
+  - Admin
+
+    - Pedidos
+
+      - [Cadastrar Pedido](./admin/pedidos/cadastrar/index.html)
+
+    - Promoções
+
+      - [Cadastrar Promoção](./admin/promocoes/cadastrar/index.html)
 
 - Geral
 
@@ -32,18 +42,28 @@
 
 - Prof. Alberto (vulgo betinho).
 
-## Formulários
+## Distribuição de Tarefas
 
-- Cadastro de Produto/Hamburguer - vitor
-- Cadastro de Usuário
-- Cadastro de Fornecedor - vitor
-- Cadastro de Funcionário - lucena
-- Cadastro de Cliente - lucena
-- Cadastro de Cardápio
-- Cadastrar Combo
-- Cadastrar Pedido - antunes
-- Cadastrar Promoção - antunes
-- Cadastrar Contato
+| Requisito                    | Vitor | G. Lucena | G. Antunes |
+| ---------------------------- | ----- | --------- | ---------- |
+| Home                         | x     | x         | x          |
+| Home / Promoção do Dia       | x     |           | x          |
+| Home / Cardápio              | x     |           | x          |
+| Sobre                        | x     | x         | x          |
+| Sobre / Quem Somos           | x     |           |            |
+| Geral / Footer               |       |           | x          |
+| Geral / Footer / Contato     |       |           | x          |
+| Geral / Footer / Localização |       |           | x          |
+| Cadastrar Produto            | x     |           |            |
+| Cadastrar Fornecedor         | x     |           |            |
+| Cadastrar Funcionário        |       | x         |            |
+| Cadastrar Cliente            |       | x         |            |
+| Cadastrar Pedido             |       |           | x          |
+| Cadastrar Promoção           |       |           | x          |
+| Cadastrar Usuário            |       |           |            |
+| Cadastrar Cardápio           |       |           |            |
+| Cadastrar Combo              |       |           |            |
+| Cadastrar Contato            |       |           |            |
 
 ## Desenvolvimento
 
