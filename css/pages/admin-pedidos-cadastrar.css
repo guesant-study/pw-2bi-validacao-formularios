@@ -1,0 +1,9 @@
+.adicionar-produtos .quantidade input {
+  max-width: max-content;
+
+  width: 8rem;
+}
+
+.adicionar-produtos .preco input {
+  width: 6rem;
+}
