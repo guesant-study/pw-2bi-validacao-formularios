@@ -4,30 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../../css/geral.css" />
+
     <link rel="stylesheet" href="../../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../../css/geral.css" />
+
     <title>Cadastrar Funcionário</title>
+
+    <script type="module" src="../../../js/pw-web-components/pw-web-components.esm.js"></script>
+    <script nomodule src="../../../js/pw-web-components/pw-web-components.js"></script>
   </head>
-  <body>
-    <header class="app-header">
-      <div class="app-container app-header-container">
-        <div>
-          <a class="app-header-brand" href="../../../index.html">
-            <img src="../../../imgs/logo.webp" alt="Logo da Hamburgueria Siri Cascudo" />
-          </a>
-        </div>
-        <nav>
-          <ul class="app-header-links">
-            <li>
-              <a class="app-ativo" href="../../../index.html">Início</a>
-            </li>
-            <li>
-              <a href="../../../sobre.html">Sobre</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+  <body data-pw-config-base-url="../../../">
+    <pw-header active-link="painel"></pw-header>
+
     <div class="container">
       <h1 class="titulo">Cadastrar Funcionário</h1>
       <form action="cadastro" method="post" id="cadastroForm">

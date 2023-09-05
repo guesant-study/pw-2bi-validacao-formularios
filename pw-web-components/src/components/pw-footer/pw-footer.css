@@ -1,0 +1,64 @@
+:host {
+  display: block;
+}
+
+.pw-footer {
+  color: white;
+}
+
+.pw-footer .pw-footer-infos-bg {
+  background: rgb(111, 8, 8);
+}
+
+.pw-footer h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  margin-bottom: 1rem;
+}
+
+.pw-footer .pw-footer-infos {
+  padding: 2rem 1rem;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  gap: 2rem;
+}
+
+.pw-footer .pw-footer-localizacao {
+  flex: 1 1;
+}
+
+.pw-footer .pw-footer-localizacao-descricao p {
+  line-height: 1.3;
+  margin: 1rem 0;
+}
+
+.pw-footer .pw-footer-localizacao img {
+  border: 10px solid rgb(211, 173, 38);
+  border-radius: 1rem;
+}
+
+.pw-footer .pw-footer-contato .pw-footer-contato-lista {
+  display: flex;
+  flex-direction: column;
+
+  padding: 1rem 0;
+}
+
+.pw-footer .pw-footer-contato .pw-footer-contato-lista li {
+  padding: 1rem 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.575);
+}
+
+.pw-footer .pw-footer-contato .pw-footer-contato-lista li:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.575);
+}
+
+.pw-footer .pw-footer-copy {
+  background: rgb(72, 3, 3);
+  text-align: center;
+  padding: 1rem;
+}

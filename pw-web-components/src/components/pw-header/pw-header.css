@@ -1,0 +1,44 @@
+:host {
+  display: block;
+}
+
+.pw-header {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+
+  z-index: 1000;
+  position: relative;
+}
+
+.pw-header .pw-header-container {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem;
+}
+
+.pw-header .pw-header-brand img {
+  height: 4.5rem;
+}
+
+.pw-header .pw-header-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.5rem;
+}
+
+.pw-header .pw-header-links a {
+  border-radius: 0.5rem;
+
+  padding: 0.5rem 1.25rem;
+
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.pw-header .pw-header-links a.pw-header-link-active {
+  background-color: red;
+  color: white;
+}
