@@ -1,0 +1,33 @@
+services:
+  php:
+    container_name: pw-php
+    image: php:7.2-apache
+    volumes:
+      - ./:/var/www/html/
+    ports:
+      - 80:80
+    networks:
+      - pw-net
+  mysql:
+    container_name: pw-mysql
+    image: mysql:8.0-debian
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - ./volumes/mysql:/var/lib/mysql
+    networks:
+      - pw-net
+  phpmyadmin:
+    image: phpmyadmin
+    environment:
+      PMA_HOST: pw-mysql
+      PMA_PORT: 3306
+      PMA_USER: root
+      PMA_PASSWORD: root
+    ports:
+      - 8080:80
+    networks:
+      - pw-net
+
+networks:
+  pw-net:
