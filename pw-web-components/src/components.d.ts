@@ -17,6 +17,10 @@ export namespace Components {
         "brandImageUrl"?: string;
         "linkBaseUrl"?: string;
     }
+    interface PwPainelLayout {
+        "activeLink"?: string;
+        "baseUrl": string;
+    }
 }
 declare global {
     interface HTMLPwFooterElement extends Components.PwFooter, HTMLStencilElement {
@@ -31,9 +35,16 @@ declare global {
         prototype: HTMLPwHeaderElement;
         new (): HTMLPwHeaderElement;
     };
+    interface HTMLPwPainelLayoutElement extends Components.PwPainelLayout, HTMLStencilElement {
+    }
+    var HTMLPwPainelLayoutElement: {
+        prototype: HTMLPwPainelLayoutElement;
+        new (): HTMLPwPainelLayoutElement;
+    };
     interface HTMLElementTagNameMap {
         "pw-footer": HTMLPwFooterElement;
         "pw-header": HTMLPwHeaderElement;
+        "pw-painel-layout": HTMLPwPainelLayoutElement;
     }
 }
 declare namespace LocalJSX {
@@ -48,9 +59,14 @@ declare namespace LocalJSX {
         "brandImageUrl"?: string;
         "linkBaseUrl"?: string;
     }
+    interface PwPainelLayout {
+        "activeLink"?: string;
+        "baseUrl"?: string;
+    }
     interface IntrinsicElements {
         "pw-footer": PwFooter;
         "pw-header": PwHeader;
+        "pw-painel-layout": PwPainelLayout;
     }
 }
 export { LocalJSX as JSX };
@@ -59,6 +75,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "pw-footer": LocalJSX.PwFooter & JSXBase.HTMLAttributes<HTMLPwFooterElement>;
             "pw-header": LocalJSX.PwHeader & JSXBase.HTMLAttributes<HTMLPwHeaderElement>;
+            "pw-painel-layout": LocalJSX.PwPainelLayout & JSXBase.HTMLAttributes<HTMLPwPainelLayoutElement>;
         }
     }
 }
