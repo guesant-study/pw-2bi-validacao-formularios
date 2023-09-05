@@ -1,0 +1,8 @@
+:host {
+  display: block;
+}
+
+.pw-painel-layout {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}

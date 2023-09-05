@@ -378,12 +378,12 @@ span,
 applet,
 object,
 iframe,
-h1,
+/* h1,
 h2,
 h3,
 h4,
 h5,
-h6,
+h6, */
 p,
 blockquote,
 pre,
@@ -426,12 +426,12 @@ label,
 legend,
 table,
 caption,
-tbody,
+/* tbody,
 tfoot,
 thead,
 tr,
 th,
-td,
+td, */
 article,
 aside,
 canvas,
@@ -455,10 +455,11 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  /* font-size: 100%; */
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -491,7 +492,8 @@ q:after {
   content: "";
   content: none;
 }
-table {
+
+/* table {
   border-collapse: collapse;
   border-spacing: 0;
-}
+} */
