@@ -1,4 +1,5 @@
-import { Component, Host, Prop, h } from '@stencil/core';
+import { Component, Element, Host, Prop, h } from '@stencil/core';
+import { getPwConfigBaseUrl } from '../../utils/utils';
 
 const LINKS = [
   {
@@ -24,32 +25,39 @@ const LINKS = [
   shadow: false,
 })
 export class PwHeader {
+  @Element()
+  el!: HTMLElement;
+
   @Prop()
   baseUrl: string;
 
-  @Prop()
-  activeLink?: string;
+  get computedBaseUrl() {
+    return this.baseUrl ?? getPwConfigBaseUrl(this.el);
+  }
 
   @Prop()
   brandImageUrl?: string;
 
   get computedBrandImageUrl() {
-    return this.brandImageUrl ?? `${this.baseUrl}imgs/logo.webp`;
+    return this.brandImageUrl ?? `${this.computedBaseUrl}imgs/logo.webp`;
   }
 
   @Prop()
   linkBaseUrl?: string;
 
   get computedLinkBaseUrl() {
-    return this.linkBaseUrl ?? `${this.baseUrl}`;
+    return this.linkBaseUrl ?? `${this.computedBaseUrl}`;
   }
 
   @Prop()
   brandHref?: string;
 
   get computedBrandHref() {
-    return this.brandHref ?? `${this.baseUrl}`;
+    return this.brandHref ?? `${this.computedBaseUrl}`;
   }
+
+  @Prop()
+  activeLink?: string;
 
   render() {
     return (

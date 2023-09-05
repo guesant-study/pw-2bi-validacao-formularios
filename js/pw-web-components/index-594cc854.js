@@ -3454,6 +3454,6 @@ const nextTick = /*@__PURE__*/ (cb) => promiseResolve().then(cb);
 const readTask = /*@__PURE__*/ queueTask(queueDomReads, false);
 const writeTask = /*@__PURE__*/ queueTask(queueDomWrites, true);
 
-export { BUILD as B, H, NAMESPACE as N, Host as a, bootstrapLazy as b, consoleDevInfo as c, doc as d, h, promiseResolve as p, registerInstance as r, setNonce as s };
+export { BUILD as B, H, NAMESPACE as N, Host as a, bootstrapLazy as b, consoleDevInfo as c, doc as d, getElement as g, h, promiseResolve as p, registerInstance as r, setNonce as s };
 
-//# sourceMappingURL=index-9cd43aad.js.map
+//# sourceMappingURL=index-594cc854.js.map

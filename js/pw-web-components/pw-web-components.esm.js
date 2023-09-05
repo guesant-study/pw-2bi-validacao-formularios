@@ -1,5 +1,5 @@
-import { B as BUILD, c as consoleDevInfo, H, d as doc, N as NAMESPACE, p as promiseResolve, b as bootstrapLazy } from './index-9cd43aad.js';
-export { s as setNonce } from './index-9cd43aad.js';
+import { B as BUILD, c as consoleDevInfo, H, d as doc, N as NAMESPACE, p as promiseResolve, b as bootstrapLazy } from './index-594cc854.js';
+export { s as setNonce } from './index-594cc854.js';
 import { g as globalScripts } from './app-globals-0f993ce5.js';
 
 /*
@@ -59,7 +59,7 @@ const patchCloneNodeFix = (HTMLElementPrototype) => {
 
 patchBrowser().then(options => {
   globalScripts();
-  return bootstrapLazy([["pw-header",[[4,"pw-header",{"baseUrl":[1,"base-url"],"activeLink":[1,"active-link"],"brandImageUrl":[1,"brand-image-url"],"linkBaseUrl":[1,"link-base-url"],"brandHref":[1,"brand-href"]}]]]], options);
+  return bootstrapLazy([["pw-footer",[[4,"pw-footer",{"baseUrl":[1,"base-url"],"mapImageUrl":[1,"map-image-url"]}]]],["pw-header",[[4,"pw-header",{"baseUrl":[1,"base-url"],"brandImageUrl":[1,"brand-image-url"],"linkBaseUrl":[1,"link-base-url"],"brandHref":[1,"brand-href"],"activeLink":[1,"active-link"]}]]]], options);
 });
 
 //# sourceMappingURL=pw-web-components.esm.js.map
