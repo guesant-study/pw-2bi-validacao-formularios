@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/geral.css" />
+    <link rel="stylesheet" href="../css/parts/painel.css" />
+
+    <title>Cadastro Cliente</title>
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="app-container app-header-container">
+        <div>
+          <a class="app-header-brand" href="../index.html">
+            <img src="../imgs/logo.webp" alt="Logo da Hamburgueria Siri Cascudo" />
+          </a>
+        </div>
+
+        <nav>
+          <ul class="app-header-links">
+            <li>
+              <a href="../index.html">Início</a>
+            </li>
+            <li>
+              <a href="../sobre.html">Sobre</a>
+            </li>
+
+            <li>
+              <a class="app-ativo" href="./">Painel</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="app-painel-layout">
+      <div class="flex-shrink-0 p-3 app-painel-navigation" style="width: 280px">
+        <a href="/admin" class="d-flex align-items-center pb-3 pt-2 mb-3 link-body-emphasis text-decoration-none border-bottom">
+          <span class="fs-5 fw-semibold">Painel</span>
+        </a>
+
+        <ul class="list-unstyled ps-0">
+          <li class="mb-1">
+            <button
+              class="btn btn-toggle d-inline-flex align-items-center rounded border-0"
+              data-bs-toggle="collapse"
+              data-bs-target="#menu-clientes"
+              aria-expanded="true"
+            >
+              Clientes
+            </button>
+            <div class="collapse show" id="menu-clientes">
+              <div class="list-group">
+                <a href="/admin/clientes/cadastrar/" class="list-group-item list-group-item-action" aria-current="true">
+                  Cadastrar Cliente
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li class="mb-1">
+            <button
+              class="btn btn-toggle d-inline-flex align-items-center rounded border-0"
+              data-bs-toggle="collapse"
+              data-bs-target="#menu-fornecedores"
+              aria-expanded="true"
+            >
+              Fornecedores
+            </button>
+            <div class="collapse show" id="menu-fornecedores">
+              <div class="list-group">
+                <a href="/admin/fornecedores/cadastrar/" class="list-group-item list-group-item-action" aria-current="true">
+                  Cadastrar Fornecedor
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li class="mb-1">
+            <button
+              class="btn btn-toggle d-inline-flex align-items-center rounded border-0"
+              data-bs-toggle="collapse"
+              data-bs-target="#menu-funcionarios"
+              aria-expanded="true"
+            >
+              Funcionários
+            </button>
+            <div class="collapse show" id="menu-funcionarios">
+              <div class="list-group">
+                <a href="/admin/funcionarios/cadastrar/" class="list-group-item list-group-item-action" aria-current="true">
+                  Cadastrar Funcionário
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li class="mb-1">
+            <button
+              class="btn btn-toggle d-inline-flex align-items-center rounded border-0"
+              data-bs-toggle="collapse"
+              data-bs-target="#menu-pedidos"
+              aria-expanded="true"
+            >
+              Pedidos
+            </button>
+            <div class="collapse show" id="menu-pedidos">
+              <div class="list-group">
+                <a href="/admin/pedidos/cadastrar/" class="list-group-item list-group-item-action" aria-current="true">
+                  Cadastrar Pedido
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li class="mb-1">
+            <button
+              class="btn btn-toggle d-inline-flex align-items-center rounded border-0"
+              data-bs-toggle="collapse"
+              data-bs-target="#menu-produtos"
+              aria-expanded="true"
+            >
+              Produtos
+            </button>
+            <div class="collapse show" id="menu-produtos">
+              <div class="list-group">
+                <a href="/admin/produtos/cadastrar/" class="list-group-item list-group-item-action" aria-current="true">
+                  Cadastrar Produto
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li class="mb-1">
+            <button
+              class="btn btn-toggle d-inline-flex align-items-center rounded border-0"
+              data-bs-toggle="collapse"
+              data-bs-target="#menu-promocoes"
+              aria-expanded="true"
+            >
+              Promoções
+            </button>
+            <div class="collapse show" id="menu-promocoes">
+              <div class="list-group">
+                <a href="/admin/promocoes/cadastrar/" class="list-group-item list-group-item-action" aria-current="true">
+                  Cadastrar Promoção
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="container">
+        <!--  -->
+      </div>
+    </div>
+
+    <script src="../js/validacliente.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>

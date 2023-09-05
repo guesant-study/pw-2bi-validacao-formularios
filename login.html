@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="./imgs/favicon.png" type="image/png" />
+    <title>Login - Hamburgueria Siri Cascudo</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/geral.css" />
+    <link rel="stylesheet" href="./css/pages/login.css" />
+  </head>
+
+  <body>
+    <header class="app-header">
+      <div class="app-container app-header-container">
+        <div>
+          <a class="app-header-brand" href="./index.html">
+            <img src="./imgs/logo.webp" alt="Logo da Hamburgueria Siri Cascudo" />
+          </a>
+        </div>
+
+        <nav>
+          <ul class="app-header-links">
+            <li>
+              <a href="./index.html">Início</a>
+            </li>
+
+            <li>
+              <a href="./sobre.html">Sobre</a>
+            </li>
+
+            <li>
+              <a class="app-ativo" href="./login.html">Painel</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="mainContent">
+      <div class="form-signin w-100 m-auto my-4">
+        <form action="/admin">
+          <h1 class="h3 mb-3 fw-normal text-center">Entrar</h1>
+
+          <div class="my-4">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="login-usuario" placeholder="Usuário" />
+              <label for="login-usuario">Usuário</label>
+            </div>
+
+            <div class="form-floating">
+              <input type="password" class="form-control" id="login-senha" placeholder="Senha" />
+              <label for="login-senha">Senha</label>
+            </div>
+          </div>
+
+          <button class="btn btn-danger w-100 py-2" type="submit">Entrar</button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="app-footer">
+      <div class="app-footer-infos-bg">
+        <div class="app-container app-footer-infos">
+          <div class="app-contato">
+            <h2>Contato</h2>
+
+            <ul class="app-contato-lista">
+              <li>Telefone: (69) 98888-7777</li>
+              <li>E-mail: contato@siricascudo.com.br</li>
+            </ul>
+          </div>
+
+          <div class="app-localizacao">
+            <h2>Localização</h2>
+
+            <img src="./imgs/mapa.jpg" alt="Endereço" />
+
+            <div class="app-localizacao-descricao">
+              <p>
+                O Siri Cascudo está localizado no coração da Fenda do Bikini, na Rua da Concha, 123. Nosso restaurante figit a
+                próximo à praia e é de fácil acesso, seja de carro ou a pé.
+              </p>
+              <p>
+                Para quem vem de carro, há estacionamentos próximos onde é possível deixar o veículo com segurança. E para quem
+                prefere utilizar transporte público, há diversas linhas de ônibus que param próximas ao nosso estabelecimento.
+              </p>
+              <p>Então, venha nos visitar e desfrutar dos melhores hambúrgueres da Fenda do Bikini!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="app-footer-copy">
+        <div class="app-container">
+          <p>&copy;2023 Siri Cascudo | Todos os Direitos Reservados</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
