@@ -7,6 +7,11 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface PwHeader {
+        "activeLink"?: string;
+        "baseUrl": string;
+        "brandHref"?: string;
+        "brandImageUrl"?: string;
+        "linkBaseUrl"?: string;
     }
 }
 declare global {
@@ -22,6 +27,11 @@ declare global {
 }
 declare namespace LocalJSX {
     interface PwHeader {
+        "activeLink"?: string;
+        "baseUrl"?: string;
+        "brandHref"?: string;
+        "brandImageUrl"?: string;
+        "linkBaseUrl"?: string;
     }
     interface IntrinsicElements {
         "pw-header": PwHeader;

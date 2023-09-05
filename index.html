@@ -10,33 +10,12 @@
 
     <link rel="stylesheet" href="./css/geral.css" />
     <link rel="stylesheet" href="./css/pages/home.css" />
+
+    <script type="module" src="./js/pw-web-components/pw-web-components.esm.js"></script>
+    <script nomodule src="./js/pw-web-components/pw-web-components.js"></script>
   </head>
   <body>
-    <header class="app-header">
-      <div class="app-container app-header-container">
-        <div>
-          <a class="app-header-brand" href="./index.html">
-            <img src="./imgs/logo.webp" alt="Logo da Hamburgueria Siri Cascudo" />
-          </a>
-        </div>
-
-        <nav>
-          <ul class="app-header-links">
-            <li>
-              <a class="app-ativo" href="./index.html">Início</a>
-            </li>
-
-            <li>
-              <a href="./sobre.html">Sobre</a>
-            </li>
-
-            <li>
-              <a href="./login.html">Painel</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <pw-header base-url="./" active-link="inicio"></pw-header>
 
     <main class="app-home">
       <div class="app-container">
