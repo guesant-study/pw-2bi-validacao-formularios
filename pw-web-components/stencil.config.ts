@@ -20,7 +20,7 @@ export const config: Config = {
 
     {
       type: 'dist',
-      buildDir: '../../js',
+      buildDir: '../../www/js',
     },
   ],
   testing: {

@@ -4,25 +4,25 @@
 
 - Páginas
 
-  - [Home](./index.html)
+  - [Home](./www/index.php)
 
-    - [Promoção do dia](./index.html#promocao-do-dia)
+    - [Promoção do dia](./www/index.php#promocao-do-dia)
 
-    - [Nossos Itens (Cardápio)](./index.html#cardapio)
+    - [Nossos Itens (Cardápio)](./www/index.php#cardapio)
 
-  - [Sobre](./sobre.html)
+  - [Sobre](./www/sobre.php)
 
-    - [Quem Somos](./sobre.html)
+    - [Quem Somos](./www/sobre.php)
 
   - Admin
 
     - Pedidos
 
-      - [Cadastrar Pedido](./admin/pedidos/cadastrar/index.html)
+      - [Cadastrar Pedido](./www/admin/pedidos/cadastrar/index.php)
 
     - Promoções
 
-      - [Cadastrar Promoção](./admin/promocoes/cadastrar/index.html)
+      - [Cadastrar Promoção](./www/admin/promocoes/cadastrar/index.php)
 
 - Geral
 

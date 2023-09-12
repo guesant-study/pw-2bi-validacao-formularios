@@ -1,3 +1,4 @@
 volumes
 .vscode
 node_modules
+.yarn

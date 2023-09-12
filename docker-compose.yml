@@ -1,9 +1,10 @@
 services:
   php:
     container_name: pw-php
-    image: php:7.2-apache
+    build:
+      context: ./devops/php/image
     volumes:
-      - ./:/var/www/html/
+      - ./www:/var/www/html/
     ports:
       - 80:80
     networks:
@@ -14,7 +15,8 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
     volumes:
-      - ./volumes/mysql:/var/lib/mysql
+      - ./volumes/mysql/data:/var/lib/mysql
+      - ./devops/bd/initdb:/docker-entrypoint-initdb.d
     networks:
       - pw-net
   phpmyadmin:

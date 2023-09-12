@@ -4,17 +4,17 @@ import { getPwConfigBaseUrl } from '../../utils/utils';
 const LINKS = [
   {
     id: 'inicio',
-    href: 'index.html',
+    href: 'index.php',
     label: 'Início',
   },
   {
     id: 'sobre',
-    href: 'sobre.html',
+    href: 'sobre.php',
     label: 'Sobre',
   },
   {
     id: 'painel',
-    href: 'login.html',
+    href: 'login.php',
     label: 'Painel',
   },
 ];
