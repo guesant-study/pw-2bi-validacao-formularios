@@ -5,6 +5,7 @@ services:
       context: ./devops/php/image
     volumes:
       - ./www:/var/www/html/
+      - ./php:/var/www/php/
     ports:
       - 80:80
     networks:

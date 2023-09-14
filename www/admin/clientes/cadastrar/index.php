@@ -19,7 +19,7 @@
       <div class="container px-4">
         <h1 class="titulo my-3">Cadastrar Cliente</h1>
 
-        <form action="cadastro" method="post" id="cadastroForm" class="needs-validation" novalidate>
+        <form action="script.php" method="post" id="cadastroForm" class="needs-validation" novalidate>
           <div class="mb-3">
             <label for="nome">Nome Completo:</label>
             <input type="text" id="nome" class="form-control" placeholder="Nome Completo" name="nome" required />
@@ -52,7 +52,6 @@
                 required
                 pattern="^[\w.-]+@[a-zA-Z_-]+?(?:\.[a-zA-Z]{2,})+$"
               />
-              <span class="input-group-text" id="email">@exemplo.com</span>
               <div class="invalid-feedback">Por favor, insira um email válido.</div>
             </div>
           </div>
