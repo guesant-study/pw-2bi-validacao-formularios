@@ -1,5 +1,6 @@
 <?php
-function bd_conectar() {
+function bd_conectar()
+{
   $_con = mysqli_connect('pw-mysql', 'root', 'root', 'bd_pw');
 
   if ($_con === FALSE) {
@@ -10,7 +11,8 @@ function bd_conectar() {
   return $_con;
 }
 
-function bd_desconectar($_con) {
+function bd_desconectar($_con)
+{
   mysqli_close($_con);
 }
 

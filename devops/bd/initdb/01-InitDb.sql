@@ -4,13 +4,15 @@ USE bd_pw;
 
 CREATE TABLE IF NOT EXISTS endereco (
   id_end INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-  pais_end VARCHAR(45),
-  cidade_end VARCHAR(100),
-  bairro_end VARCHAR(100),
-  cep_end VARCHAR(45),
-  rua_end VARCHAR(300),
-  numero_end INT
-) ENGINE = InnoDB;
+  pais_end VARCHAR(45) NOT NULL,
+  codigo_postal_end VARCHAR(45) NOT NULL,
+  uf_end VARCHAR(2) NOT NULL,
+  cidade_end VARCHAR(45) NOT NULL,
+  rua_end VARCHAR(45) NOT NULL,
+  numero_end INT NOT NULL,
+  bairro_end VARCHAR(45) NOT NULL,
+  complemento_end VARCHAR(45)
+) ENGINE = InnoDB DEFAULT CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci;
 
 CREATE TABLE IF NOT EXISTS cliente (
   id_cli INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
@@ -86,18 +88,6 @@ CREATE TABLE IF NOT EXISTS promocao_produto (
   FOREIGN KEY (id_promo_fk) REFERENCES promocao (id_promo),
   FOREIGN KEY (id_prod_fk) REFERENCES produto (id_prod)
 ) ENGINE = InnoDB;
-
-CREATE TABLE IF NOT EXISTS endereco (
-  id_end INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-  pais_end VARCHAR(45) NOT NULL,
-  codigo_postal_end VARCHAR(45) NOT NULL,
-  uf_end VARCHAR(2) NOT NULL,
-  cidade_end VARCHAR(45) NOT NULL,
-  rua_end VARCHAR(45) NOT NULL,
-  numero_end INT NOT NULL,
-  bairro_end VARCHAR(45) NOT NULL,
-  complemento_end VARCHAR(45)
-) ENGINE = InnoDB DEFAULT CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci;
 
 CREATE TABLE IF NOT EXISTS cliente (
   id_cli INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
