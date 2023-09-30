@@ -101,8 +101,6 @@ function validarFormulario() {
       return;
     }
 
-    alert("Formulário enviado com sucesso!");
-    form.reset();
   });
 }
 
@@ -117,7 +115,6 @@ function validarFormulario() {
       (event) => {
         if (!form.checkValidity()) {
           event.preventDefault();
-          event.stopPropagation();
         }
 
         form.classList.add("was-validated");
